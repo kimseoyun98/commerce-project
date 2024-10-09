@@ -1,11 +1,13 @@
 import Image from "next/image";
-import Logo from "/public/assets/logo.png";
+import Logo from "/assets/logo.png";
 import Link from "next/link";
 
 export default function Layout({
   children,
+  modal,
 }: Readonly<{
   children: React.ReactNode;
+  modal: React.ReactNode;
 }>) {
   return (
     <>
@@ -26,6 +28,7 @@ export default function Layout({
           </Link>
         </div>
       </header>
+      {modal}
       {children}
     </>
   );

@@ -16,7 +16,7 @@ const NewProductList = async () => {
             <Link
               key={product.id}
               className="w-[120px] flex flex-col border gap-4 rounded-md"
-              href={`/product/${product.id}`}
+              href={`/product/${product.id}/view`}
             >
               <Image
                 className="rounded-sm object-cover w-[120px] h-[120px]"
